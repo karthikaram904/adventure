@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>EcoThrill Adventure Park</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+         <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                 <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/adv-logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Home</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="index.html" class="dropdown-item">Home1</a>
+                                <a href="home2.html" class="dropdown-item active">Home2</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="booking.html" class="nav-item nav-link">Booking</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="dashboard.html" class="nav-item nav-link dash">Dashboard</a>
+                    </div>
+                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                   <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    <button id="rtl-toggle" class="rtl-btn" aria-label="Toggle RTL">⇄</button>
+     <a href="login.html" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Login</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <section class="eco2-hero-center">
+    <div class="eco2-center-carousel owl-carousel">
+
+        <!-- Slide 1 -->
+        <div class="eco2-center-slide" style="background-image:url('img/banner1.jpg')">
+            <div class="eco2-center-overlay"></div>
+
+            <div class="eco2-center-content">
+                <span class="eco2-badge">Eco Adventure Park</span>
+                <h1>
+                    Nature-Powered <br> Thrills & Fun
+                </h1>
+                <p>
+                    Discover adrenaline rides, water attractions and eco-friendly
+                    adventures designed for all age groups.
+                </p>
+                <a href="booking.html" class="eco2-main-btn">Book Your Slot</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="eco2-center-slide" style="background-image:url('img/banner2.jpg')">
+            <div class="eco2-center-overlay"></div>
+
+            <div class="eco2-center-content">
+                <span class="eco2-badge">Water • Adventure • Fun</span>
+                <h1>
+                    Splash Into <br> Unlimited Joy
+                </h1>
+                <p>
+                    From thrilling slides to calm family zones,
+                    every moment at EcoThrill is unforgettable.
+                </p>
+                <a href="service.html" class="eco2-main-btn outline">Explore Rides</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="eco2-center-slide" style="background-image:url('img/banner3.jpg')">
+            <div class="eco2-center-overlay"></div>
+
+            <div class="eco2-center-content">
+                <span class="eco2-badge">Safe • Certified • Trusted</span>
+                <h1>
+                    Adventure With <br> Complete Safety
+                </h1>
+                <p>
+                    International safety standards, trained staff
+                    and eco-friendly infrastructure for worry-free fun.
+                </p>
+                <a href="about.html" class="eco2-main-btn">Know More</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+       <section class="eco2-feature-section">
+    <div class="container">
+        <div class="eco2-feature-head text-center">
+            <h6>WHY CHOOSE US</h6>
+            <h2>Unforgettable Water Adventures</h2>
+            <p>Thrill, relaxation and safety – everything packed into one eco-friendly destination.</p>
+        </div>
+
+        <div class="row eco2-feature-grid">
+
+            <!-- Feature 1 -->
+            <div class="col-lg-4">
+                <div class="eco2-feature-box">
+                    <div class="eco2-feature-img">
+                        <img src="img/gallery1.jpg" alt="">
+                    </div>
+                    <div class="eco2-feature-info">
+                        <h4>Best Pools</h4>
+                        <p>
+                            Crystal-clear pools crafted for families, kids and relaxation lovers
+                            with international safety standards.
+                        </p>
+                        <a href="#">Explore More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-lg-4">
+                <div class="eco2-feature-box active">
+                    <div class="eco2-feature-img">
+                        <img src="img/gallery2.jpg" alt="">
+                    </div>
+                    <div class="eco2-feature-info">
+                        <h4>Extreme Water Slides</h4>
+                        <p>
+                            High-speed, adrenaline-filled water slides designed to give
+                            you the ultimate thrill experience.
+                        </p>
+                        <a href="#">Explore More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-lg-4">
+                <div class="eco2-feature-box">
+                    <div class="eco2-feature-img">
+                        <img src="img/gallery3.jpg" alt="">
+                    </div>
+                    <div class="eco2-feature-info">
+                        <h4>Lazy River Rides</h4>
+                        <p>
+                            Drift peacefully through scenic water routes surrounded
+                            by nature and calming vibes.
+                        </p>
+                        <a href="#">Explore More →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        <section class="eco2x-about">
+    <div class="eco2x-about-row">
+
+        <!-- IMAGE SIDE -->
+        <div class="eco2x-about-image">
+            <img src="img/aboutus.jpg" alt="EcoThrill Adventure">
+
+            <div class="eco2x-overlay">
+                <h2>20+ Years</h2>
+                <p>Of Adventure Excellence</p>
+            </div>
+        </div>
+
+        <!-- CONTENT SIDE -->
+        <div class="eco2x-about-content">
+            <span class="eco2x-tag">WHO WE ARE</span>
+            <h1>Where Nature Meets Thrill & Fun</h1>
+            <p class="eco2x-text">
+                EcoThrill Adventure Park is a destination built for thrill seekers,
+                families and explorers. From water rides to high-energy adventures,
+                every experience is designed with safety and excitement in mind.
+            </p>
+
+            <div class="eco2x-cards">
+                <div class="eco2x-card">
+                    <i class="fas fa-water"></i>
+                    <h4>Water Adventures</h4>
+                    <p>Refreshing rides & pools for all age groups.</p>
+                </div>
+
+                <div class="eco2x-card">
+                    <i class="fas fa-mountain"></i>
+                    <h4>Outdoor Thrills</h4>
+                    <p>Adventure activities surrounded by nature.</p>
+                </div>
+
+                <div class="eco2x-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>100% Safety</h4>
+                    <p>International safety standards & trained staff.</p>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+</section>
+
+
+
+       <section class="eco2x-services">
+    <div class="eco2x-container">
+
+        <!-- SECTION TITLE -->
+        <div class="eco2x-services-head">
+            <span>WHAT WE OFFER</span>
+            <h2>Premium Park Services</h2>
+            <p>
+                EcoThrill delivers comfort, safety and excitement with thoughtfully
+                designed services for every visitor.
+            </p>
+        </div>
+
+        <div class="eco2x-services-layout">
+
+            <!-- LEFT : TIMINGS -->
+            <div class="eco2x-timing-box">
+                <h3>Park Timings</h3>
+                <p>Thrill, relaxation and safety – everything packed into one<br> eco-friendly destination.</p>
+
+                <div class="eco2x-time-item">
+                    <span>Mon – Fri</span>
+                    <strong>11:00 AM – 04:00 PM</strong>
+                </div>
+
+                <div class="eco2x-time-item">
+                    <span>Sat – Sun</span>
+                    <strong>09:00 AM – 05:00 PM</strong>
+                </div>
+
+                <div class="eco2x-time-item highlight">
+                    <span>Holidays</span>
+                    <strong>09:00 AM – 05:00 PM</strong>
+                </div>
+            </div>
+
+            <!-- RIGHT : SERVICES -->
+            <div class="eco2x-service-cards">
+
+                <div class="eco2x-service-card">
+                    <i class="fas fa-home"></i>
+                    <h4>Private Gazebo</h4>
+                    <p>
+                        Comfortable private spaces for families and groups to relax
+                        between adventures.
+                    </p>
+                </div>
+
+                <div class="eco2x-service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Food Court</h4>
+                    <p>
+                        Hygienic, delicious food and refreshments to fuel your day.
+                    </p>
+                </div>
+
+                <div class="eco2x-service-card">
+                    <i class="fas fa-lock"></i>
+                    <h4>Secure Lockers</h4>
+                    <p>
+                        Store your valuables safely while enjoying rides freely.
+                    </p>
+                </div>
+
+                <div class="eco2x-service-card">
+                    <i class="fas fa-water"></i>
+                    <h4>River Rides</h4>
+                    <p>
+                        Smooth, scenic water rides designed for fun and relaxation.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Eco2 Blog Start -->
+<section class="eco2-blog">
+    <div class="eco2-container">
+
+        <div class="eco2-blog-head">
+            <span>Our Blog</span>
+            <h2>Stories From EcoThrill</h2>
+            <p>Tips, guides, and adventure stories to help you plan the perfect day at EcoThrill Adventure Park.</p>
+        </div>
+
+        <div class="eco2-blog-grid">
+
+            <!-- Blog Card -->
+            <article class="eco2-blog-card">
+                <div class="eco2-blog-img">
+                    <img src="img/gallery5.jpg" alt="">
+                    <div class="eco2-blog-tag">Vacation</div>
+                </div>
+                <div class="eco2-blog-body">
+                    <span class="eco2-blog-date"><i class="fas fa-clock"></i> Aug 19, 2025</span>
+                    <h4>Why Kids Love Spending More Time in the Water</h4>
+                    <p>Water rides spark joy, energy, and laughter, making every moment unforgettable for children.</p>
+                    <a href="blog-details.html">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Card -->
+            <article class="eco2-blog-card">
+                <div class="eco2-blog-img">
+                    <img src="img/gallery6.jpg" alt="">
+                    <div class="eco2-blog-tag">Insight</div>
+                </div>
+                <div class="eco2-blog-body">
+                    <span class="eco2-blog-date"><i class="fas fa-clock"></i> Aug 19, 2025</span>
+                    <h4>5 Must-Try Attractions at EcoThrill This Season</h4>
+                    <p>From thrilling slides to calm river rides, discover attractions you shouldn’t miss.</p>
+                    <a href="blog-details.html">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Card -->
+            <article class="eco2-blog-card">
+                <div class="eco2-blog-img">
+                    <img src="img/gallery7.jpg" alt="">
+                    <div class="eco2-blog-tag">Guide</div>
+                </div>
+                <div class="eco2-blog-body">
+                    <span class="eco2-blog-date"><i class="fas fa-clock"></i> Aug 19, 2025</span>
+                    <h4>Planning the Perfect Family Day at an Adventure Park</h4>
+                    <p>Simple planning tips to enjoy rides, food, and relaxation without missing the fun.</p>
+                    <a href="blog-details.html">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+<!-- Eco2 Blog End -->
+
+<!-- Eco2 Testimonial Start -->
+<section class="eco2-testimonial">
+    <div class="eco2-container">
+
+        <div class="eco2-testimonial-head">
+            <span>Testimonials</span>
+            <h2>What Our Visitors Say</h2>
+            <p>Real stories from families and adventure lovers who experienced EcoThrill.</p>
+        </div>
+
+        <div class="eco2-testimonial-grid">
+
+            <!-- Testimonial Item -->
+            <div class="eco2-testimonial-card">
+                <div class="eco2-testimonial-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                    EcoThrill was an unforgettable experience for our family.  
+                    The rides were exciting and safety was top-notch.
+                </p>
+                <div class="eco2-testimonial-user">
+                    <img src="img/team3.jpg" alt="">
+                    <div>
+                        <h5>Arun Kumar</h5>
+                        <span>Family Visitor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Item -->
+            <div class="eco2-testimonial-card">
+                <div class="eco2-testimonial-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                    A perfect weekend escape!  
+                    Clean environment, friendly staff, and thrilling attractions.
+                </p>
+                <div class="eco2-testimonial-user">
+                    <img src="img/team1.jpg" alt="">
+                    <div>
+                        <h5>Priya Sharma</h5>
+                        <span>Adventure Lover</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Item -->
+            <div class="eco2-testimonial-card">
+                <div class="eco2-testimonial-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p>
+                    My kids absolutely loved the water rides and adventure rides!  
+                    We are already planning our next visit.
+                </p>
+                <div class="eco2-testimonial-user">
+                    <img src="img/team-2.jpg" alt="">
+                    <div>
+                        <h5>Ramesh Iyer</h5>
+                        <span>Parent</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Eco2 Testimonial End -->
+
+
+
+
+        <!-- Eco2 Team Start -->
+<section class="eco2-team">
+    <div class="eco2-container">
+
+        <div class="eco2-team-head">
+            <span>Our Experts</span>
+            <h2>Meet the Adventure Team</h2>
+            <p>Experienced professionals dedicated to safety, fun, and unforgettable adventures.</p>
+        </div>
+
+        <div class="eco2-team-grid">
+
+            <!-- Team Member -->
+            <div class="eco2-team-card">
+                <div class="eco2-team-img">
+                    <img src="img/team-1.jpg" alt="">
+                </div>
+                <div class="eco2-team-info">
+                    <h4>David James</h4>
+                    <span>Adventure Supervisor</span>
+                    <p>Ensuring safety standards and guiding guests through thrilling experiences.</p>
+
+                    <div class="eco2-team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member -->
+            <div class="eco2-team-card">
+                <div class="eco2-team-img">
+                    <img src="img/team-2.jpg" alt="">
+                </div>
+                <div class="eco2-team-info">
+                    <h4>William John</h4>
+                    <span>Safety Officer</span>
+                    <p>Focused on guest protection and maintaining world-class safety protocols.</p>
+
+                    <div class="eco2-team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member -->
+            <div class="eco2-team-card">
+                <div class="eco2-team-img">
+                    <img src="img/team-3.jpg" alt="">
+                </div>
+                <div class="eco2-team-info">
+                    <h4>Michael John</h4>
+                    <span>Ride Coordinator</span>
+                    <p>Helping guests enjoy smooth, exciting, and well-managed adventure rides.</p>
+
+                    <div class="eco2-team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Eco2 Team End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/adv-logo.png" alt="Logo">
+                </a>
+                            <p class="mb-2">EcoThrill Adventure Park offers safe, exciting outdoor experiences for all age groups.
+From thrilling rides to eco-friendly adventures, fun meets nature here.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">123 Street New York.USA</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                            <a href="maintenance.html"><i class="fas fa-angle-right me-2"></i> Maintenance</a>
+                            <a href="404.html"><i class="fas fa-angle-right me-2"></i> 404</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Support</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Opening Hours</h4>
+                            <div class="opening-date mb-3 pb-3">
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 me-auto">Monday - Friday:</h6>
+                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 11:00 AM - 16:00 PM</p>
+                                </div>
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 me-auto">Satur - Sunday:</h6>
+                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 09:00 AM - 17:00 PM</p>
+                                </div>
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 me-auto">Holiday:</h6>
+                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 09:00 AM - 17:00 PM</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-white mb-2">Payment Accepted</p>
+                                <img src="img/payment.png" class="img-fluid" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+       <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-12 text-center text-md-start mb-md-0">
+                       <center> <span class="text-body"><a href="#" class="text-white">Copyright © 2026 Eco Thrill Park. All rights reserved.</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

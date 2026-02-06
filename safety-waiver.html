@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoThrill Dashboard</title>
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dashboard-page">
+
+<!-- Sidebar -->
+<aside class="eco-sidebar" id="ecoSidebar">
+    <div class="eco-sidebar-header">
+        <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/adv-logo.png" alt="Logo">
+                </a>
+        <span class="eco-close-btn" onclick="ecoToggleSidebar()">&times;</span>
+    </div>
+
+    <ul class="eco-menu">
+    <li class="eco-active">
+        <a href="dashboard.html">
+            <i class="fa fa-gauge"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="time-booking.html">
+            <i class="fa fa-calendar-check"></i>
+            <span>Time Booking</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="safety-waiver.html">
+            <i class="fa fa-file-signature"></i>
+            <span>Safety Waiver</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="photo-video.html">
+            <i class="fa fa-camera"></i>
+            <span>Photo / Video</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="profile.html">
+            <i class="fa fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="logout.html">
+            <i class="fa fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </a>
+    </li>
+</ul>
+
+</aside>
+
+<!-- Main Content -->
+<div class="eco-main">
+
+    <!-- Topbar -->
+    <header class="eco-topbar">
+        <button class="eco-menu-btn" onclick="ecoToggleSidebar()">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <h3>Safety Waiver</h3>
+
+        <div class="eco-user">
+            <img src="img/user.jpg" alt="">
+            <span>Guest</span>
+        </div>
+    </header>
+
+    <!-- Table -->
+    <!-- Safety Waiver Content -->
+<section class="eco-waiver">
+
+    <!-- Intro -->
+    <div class="eco-waiver-intro">
+        <h2>Safety Waiver</h2>
+        <p>
+            Please read and accept the safety waiver before participating
+            in any adventure activities at EcoThrill Adventure Park.
+        </p>
+    </div>
+
+    <!-- Waiver Box -->
+    <div class="eco-waiver-box">
+        <h4>Participant Safety Agreement</h4>
+
+        <div class="eco-waiver-content">
+            <p>
+                I understand that adventure activities involve inherent risks,
+                including but not limited to physical injury, falls, or accidents.
+            </p>
+            <p>
+                I confirm that I am physically fit and do not have any medical
+                condition that would prevent me from participating safely.
+            </p>
+            <p>
+                I agree to follow all safety instructions provided by EcoThrill
+                staff and use safety equipment properly at all times.
+            </p>
+            <p>
+                EcoThrill Adventure Park shall not be held responsible for injuries
+                caused due to negligence in following safety guidelines.
+            </p>
+        </div>
+
+        <!-- Acceptance -->
+        <div class="eco-waiver-accept">
+            <label>
+                <input type="checkbox">
+                I have read and agree to the Safety Waiver
+            </label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="eco-waiver-actions">
+            <button class="eco-btn-secondary">Download Waiver</button>
+            <button class="eco-btn-primary">Accept & Continue</button>
+        </div>
+    </div>
+
+</section>
+
+
+</div>
+
+<script>
+function ecoToggleSidebar() {
+    document.getElementById("ecoSidebar").classList.toggle("eco-show");
+}
+</script>
+
+</body>
+</html>

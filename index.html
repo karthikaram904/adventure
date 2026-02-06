@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>EcoThrill Adventure Park</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+         <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                 <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/adv-logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Home</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="index.html" class="dropdown-item active">Home1</a>
+                                <a href="home2.html" class="dropdown-item">Home2</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="booking.html" class="nav-item nav-link">Booking</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="dashboard.html" class="nav-item nav-link dash">Dashboard</a>
+                    </div>
+                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                   <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    <button id="rtl-toggle" class="rtl-btn" aria-label="Toggle RTL">⇄</button>
+     <a href="login.html" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Login</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item">
+                <img src="img/banner1.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container align-items-center py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To EcoThrill</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Experience Nature-Powered Thrills & Adventures</h1>
+                                    <p class="mb-4 fs-5">EcoThrill Adventure Park brings you high-energy rides, water attractions, and eco-friendly outdoor experiences designed for families, friends, and thrill seekers.... 
+                                    </p>
+                                    <div class="d-flex flex-shrink-0">
+                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="booking.html">Bookings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="ticket-form p-5">
+                                    <h2 class="text-dark text-uppercase mb-4">book your ticket</h2>
+                                    <form>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
+                                            </div>
+                                            <div class="col-12">
+                                                <select class="form-select border-0 py-2" aria-label="Default select example">
+                                                    <option selected>Select Packages</option>
+                                                    <option value="1">Family Packages</option>
+                                                    <option value="2">Basic Packages</option>
+                                                    <option value="3">Premium Packages</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <input class="form-control border-0 py-2" type="date">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="number" class="form-control border-0 py-2" id="number" placeholder="Guest">
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary w-100 py-2 px-5">Book Now</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <img src="img/banner2.jpg" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption">
+                    <div class="container py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To Adventure Park</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">The Greatest Water and Amusement Park</h1>
+                                    <p class="mb-4 fs-5">Adventure, fun, and excitement come together in one unforgettable destination. Explore rides and activities designed for all age groups. 
+                                    </p>
+                                    <div class="d-flex flex-shrink-0">
+                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="booking.html">Bookings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="ticket-form p-5">
+                                    <h2 class="text-dark text-uppercase mb-4">book your ticket</h2>
+                                    <form>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Your Name">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Your Email">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Phone">
+                                            </div>
+                                            <div class="col-12">
+                                                <select class="form-select border-0 py-2" aria-label="Default select example">
+                                                    <option selected>Select Packages</option>
+                                                    <option value="1">Family Packages</option>
+                                                    <option value="2">Basic Packages</option>
+                                                    <option value="3">Premium Packages</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <input class="form-control border-0 py-2" type="date">
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="number" class="form-control border-0 py-2" id="number" placeholder="Guest">
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary w-100 py-2 px-5">Book Now</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Feature Start -->
+        <div class="container-fluid feature py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item">
+                            <img src="img/gallery1.jpg" class="img-fluid rounded w-100" alt="Image">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">Best Pools</h4>
+                                    <p class="text-white">Enjoy crystal-clear pools designed for relaxation, fun, and family enjoyment in a safe and refreshing environment,
+                                    </p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item">
+                            <img src="img/gallery2.jpg" class="img-fluid rounded w-100" alt="Image">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">Waterslides</h4>
+                                    <p class="text-white">Experience adrenaline-pumping water slides built for all age groups, combining thrill, speed, and excitement,
+                                    </p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item">
+                            <img src="img/gallery3.jpg" class="img-fluid rounded w-100" alt="Image">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">River Rides</h4>
+                                    <p class="text-white">Float through scenic river rides that blend adventure with nature for a calm yet exciting experience,
+                                    </p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about pb-5">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-primary">About EcoThrill Adventure Park</h4>
+                            <h1 class="display-5 mb-4">The Perfect Adventure Destination for Families & Friends</h1>
+                            <p class="mb-5">EcoThrill Adventure Park is a premium outdoor adventure destination offering thrilling rides, water attractions, and nature-inspired experiences. With a strong focus on safety, comfort, and sustainability, we ensure every visitor enjoys unforgettable moments filled with excitement and joy.
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-glass-cheers fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Food & Drinks</h4>
+                                            <p>Delicious and hygienic food options to keep you energized throughout your adventure.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-dot-circle fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Many Attractions</h4>
+                                            <p>A wide range of rides and activities designed for kids, adults, and adventure lovers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-hand-holding-usd fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Affordable Price</h4>
+                                            <p>Exciting experiences at budget-friendly prices with flexible packages.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-lock fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Safety Lockers</h4>
+                                            <p>Secure lockers and safety facilities to ensure a worry-free visit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="row gx-4 gy-0">
+                                            <div class="col-6">
+                                                <div class="counter-item bg-primary rounded text-center p-4 h-100">
+                                                    <div class="counter-item-icon mx-auto mb-3">
+                                                        <i class="fas fa-thumbs-up fa-3x text-white"></i>
+                                                    </div>
+                                                    <div class="counter-counting mb-3">
+                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">150</span>
+                                                        <span class="h1 fw-bold text-white">K +</span>
+                                                    </div>
+                                                    <h5 class="text-white mb-0">Happy Visitors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="counter-item bg-dark rounded text-center p-4 h-100">
+                                                    <div class="counter-item-icon mx-auto mb-3">
+                                                        <i class="fas fa-certificate fa-3x text-white"></i>
+                                                    </div>
+                                                    <div class="counter-counting mb-3">
+                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">122</span>
+                                                        <span class="h1 fw-bold text-white"> +</span>
+                                                    </div>
+                                                    <h5 class="text-white mb-0">Awards Winning</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative rounded">
+                            <div class="rounded" style="margin-top: 40px;">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="rounded mb-4">
+                                            <img src="img/aboutus.jpg" class="img-fluid rounded w-100" alt="">
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded bg-primary p-4 position-absolute d-flex justify-content-center" style="width: 90%; height: 80px; top: -40px; left: 50%; transform: translateX(-50%);">
+                                <h3 class="mb-0 text-white">20 Years Experience</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-5">
+            <div class="container service-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Service</h4>
+                    <h1 class="display-5 text-white mb-4">Explore Adventure Park service</h1>
+                    <p class="mb-0 text-white">EcoThrill Adventure Park offers world-class facilities, flexible timings, and premium services to ensure a safe and enjoyable experience for every visitor.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+                    <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-days p-4">
+                            <div class="py-2 border-bottom border-top d-flex align-items-center justify-content-between flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Monday - Friday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>11:00 AM - 16:00 PM</p></div>
+                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Saturday - Sunday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
+                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0">Holiday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
+                        </div>
+                    </div>
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-home fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Private Gazebo</a>
+                                <p class="mb-0">Relax and recharge in private gazebos designed for families and groups.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-utensils fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Delicious Food</a>
+                                <p class="mb-0">Fresh, tasty meals and snacks available throughout the park.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-door-closed fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Safety Lockers</a>
+                                <p class="mb-0">Keep your belongings safe while you enjoy the rides.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-swimming-pool fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">River Rides</a>
+                                <p class="mb-0">Calm yet thrilling water rides inspired by natural surroundings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Blog</h4>
+                    <h1 class="display-5 mb-4">Latest Blog & Articles</h1>
+                    <p class="mb-0">Stay updated with tips, stories, and guides to make the most of your EcoThrill Adventure Park visit.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <a href="#">
+                                    <img src="img/gallery5.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                </a>
+                                <div class="blog-category py-2 px-4">Vacation</div>
+                                <div class="blog-date"><i class="fas fa-clock me-2"></i>August 19, 2025</div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <a href="blog-details.html" class="h4 d-inline-block mb-4">Why Kids Love Spending More Time in the Water</a>
+                                <p class="mb-4">Experience thrilling rides and exciting adventures designed for all age groups.
+Create unforgettable memories with your family and friends at EcoThrill.
+                                </p>
+                                <a href="blog-details.html" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <a href="#">
+                                    <img src="img/gallery6.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                </a>
+                                <div class="blog-category py-2 px-4">Insight</div>
+                                <div class="blog-date"><i class="fas fa-clock me-2"></i>August 19, 2025</div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <a href="blog-details.html" class="h4 d-inline-block mb-4">5 Must-Try Attractions at EcoThrill This Season</a>
+                                <p class="mb-4">Safety meets excitement with world-class rides and trained professionals.
+Enjoy your adventure with complete peace of mind and nonstop fun.
+                                </p>
+                                <a href="blog-details.html" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <a href="#">
+                                    <img src="img/gallery7.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                </a>
+                                <div class="blog-category py-2 px-4">Insight</div>
+                                <div class="blog-date"><i class="fas fa-clock me-2"></i>August 19, 2025</div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <a href="blog-details.html" class="h4 d-inline-block mb-4">Planning the Perfect Family Day at an Adventure Park</a>
+                                <p class="mb-4">From water rides to high-energy attractions, there’s something for everyone.
+Step into a world of fun, adventure, and eco-friendly experiences.
+                                </p>
+                                <a href="blog-details.html" class="btn btn-primary rounded-pill py-2 px-4">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+        <!-- Team Start -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Meet Our Team</h4>
+                    <h1 class="display-5 mb-4">Our Adventure Park Dedicated Team Member</h1>
+                    <p class="mb-0">Our dedicated and trained professionals work tirelessly to ensure your safety, comfort, and enjoyment at EcoThrill Adventure Park.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">David James</h4>
+                                        <p class="mb-0">Profession</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/team-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    </div>
+                                </div>
+                                <div class="team-icon rounded-pill my-4 p-3">
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <p class="text-center mb-0">Committed to creating safe, fun, and memorable adventure experiences for every visitor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">William John</h4>
+                                        <p class="mb-0">Profession</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/team-2.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    </div>
+                                </div>
+                                <div class="team-icon rounded-pill my-4 p-3">
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <p class="text-center mb-0">Trained professionals ensuring maximum safety and unforgettable adventure moments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item p-4">
+                            <div class="team-content">
+                                <div class="d-flex justify-content-between border-bottom pb-4">
+                                    <div class="text-start">
+                                        <h4 class="mb-0">Michael John</h4>
+                                        <p class="mb-0">Profession</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/team-3.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                                    </div>
+                                </div>
+                                <div class="team-icon rounded-pill my-4 p-3">
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <p class="text-center mb-0">Friendly experts dedicated to guiding, assisting, and protecting every guest.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/adv-logo.png" alt="Logo">
+                </a>
+                            <p class="mb-2">EcoThrill Adventure Park offers safe, exciting outdoor experiences for all age groups.
+From thrilling rides to eco-friendly adventures, fun meets nature here.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">123 Street New York.USA</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                            <a href="maintenance.html"><i class="fas fa-angle-right me-2"></i> Maintenance</a>
+                            <a href="404.html"><i class="fas fa-angle-right me-2"></i> 404</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Support</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Opening Hours</h4>
+                            <div class="opening-date mb-3 pb-3">
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 me-auto">Monday - Friday:</h6>
+                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 11:00 AM - 16:00 PM</p>
+                                </div>
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 me-auto">Satur - Sunday:</h6>
+                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 09:00 AM - 17:00 PM</p>
+                                </div>
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 me-auto">Holiday:</h6>
+                                    <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i> 09:00 AM - 17:00 PM</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-white mb-2">Payment Accepted</p>
+                                <img src="img/payment.png" class="img-fluid" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+       <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-12 text-center text-md-start mb-md-0">
+                       <center> <span class="text-body"><a href="#" class="text-white">Copyright © 2026 Eco Thrill Park. All rights reserved.</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

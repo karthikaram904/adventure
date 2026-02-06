@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoThrill Dashboard</title>
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dashboard-page">
+
+<!-- Sidebar -->
+<aside class="eco-sidebar" id="ecoSidebar">
+    <div class="eco-sidebar-header">
+        <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/adv-logo.png" alt="Logo">
+                </a>
+        <span class="eco-close-btn" onclick="ecoToggleSidebar()">&times;</span>
+    </div>
+
+    <ul class="eco-menu">
+    <li class="eco-active">
+        <a href="dashboard.html">
+            <i class="fa fa-gauge"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="time-booking.html">
+            <i class="fa fa-calendar-check"></i>
+            <span>Time Booking</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="safety-waiver.html">
+            <i class="fa fa-file-signature"></i>
+            <span>Safety Waiver</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="photo-video.html">
+            <i class="fa fa-camera"></i>
+            <span>Photo / Video</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="profile.html">
+            <i class="fa fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="logout.html">
+            <i class="fa fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </a>
+    </li>
+</ul>
+
+</aside>
+
+<!-- Main Content -->
+<div class="eco-main">
+
+    <!-- Topbar -->
+    <header class="eco-topbar">
+        <button class="eco-menu-btn" onclick="ecoToggleSidebar()">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <h3>Dashboard</h3>
+
+        <div class="eco-user">
+            <img src="img/user.jpg" alt="">
+            <span>Guest</span>
+        </div>
+    </header>
+
+    <!-- Cards -->
+    <!-- Profile Main Content -->
+<section class="eco-profile">
+
+    <div class="eco-profile-header">
+        <div class="eco-profile-info">
+            <img src="img/user.jpg" alt="User">
+            <div>
+                <h2>Guest User</h2>
+                <p>guest@ecothrill.com</p>
+            </div>
+        </div>
+
+        <button class="eco-edit-btn">
+            <i class="fa fa-pen"></i> Edit Profile
+        </button>
+    </div>
+
+    <div class="eco-profile-grid">
+
+        <!-- Personal Info -->
+        <div class="eco-profile-card">
+            <h4>Personal Information</h4>
+
+            <div class="eco-form-row">
+                <div class="eco-form-group">
+                    <label>Full Name</label>
+                    <input type="text" value="Guest User">
+                </div>
+                <div class="eco-form-group">
+                    <label>Phone Number</label>
+                    <input type="text" value="+91 98765 43210">
+                </div>
+            </div>
+
+            <div class="eco-form-row">
+                <div class="eco-form-group">
+                    <label>Email</label>
+                    <input type="email" value="guest@ecothrill.com">
+                </div>
+                <div class="eco-form-group">
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <button class="eco-save-btn">Save Changes</button>
+        </div>
+
+        <!-- Account Info -->
+        <div class="eco-profile-card">
+            <h4>Account Details</h4>
+
+            <div class="eco-form-group">
+                <label>Password</label>
+                <input type="password" value="password123">
+            </div>
+
+            <div class="eco-form-group">
+                <label>Confirm Password</label>
+                <input type="password" value="password123">
+            </div>
+
+            <button class="eco-save-btn">Update Password</button>
+        </div>
+
+    </div>
+</section>
+
+
+</div>
+
+<script>
+function ecoToggleSidebar() {
+    document.getElementById("ecoSidebar").classList.toggle("eco-show");
+}
+</script>
+
+</body>
+</html>

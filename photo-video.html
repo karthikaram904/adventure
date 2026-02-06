@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoThrill Dashboard</title>
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dashboard-page">
+
+<!-- Sidebar -->
+<aside class="eco-sidebar" id="ecoSidebar">
+    <div class="eco-sidebar-header">
+        <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/adv-logo.png" alt="Logo">
+                </a>
+        <span class="eco-close-btn" onclick="ecoToggleSidebar()">&times;</span>
+    </div>
+
+    <ul class="eco-menu">
+    <li class="eco-active">
+        <a href="dashboard.html">
+            <i class="fa fa-gauge"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="time-booking.html">
+            <i class="fa fa-calendar-check"></i>
+            <span>Time Booking</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="safety-waiver.html">
+            <i class="fa fa-file-signature"></i>
+            <span>Safety Waiver</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="photo-video.html">
+            <i class="fa fa-camera"></i>
+            <span>Photo / Video</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="profile.html">
+            <i class="fa fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="logout.html">
+            <i class="fa fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </a>
+    </li>
+</ul>
+
+</aside>
+
+<!-- Main Content -->
+<div class="eco-main">
+
+    <!-- Topbar -->
+    <header class="eco-topbar">
+        <button class="eco-menu-btn" onclick="ecoToggleSidebar()">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <h3>Photo / Video</h3>
+
+        <div class="eco-user">
+            <img src="img/user.jpg" alt="">
+            <span>Guest</span>
+        </div>
+    </header>
+
+    <!-- Cards -->
+    <!-- Photo / Video Main Content -->
+<section class="eco-addon">
+
+    <div class="eco-addon-header">
+        <h2>Photo & Video Add-ons</h2>
+        <p>Capture your best adventure moments and take them home!</p>
+    </div>
+
+    <div class="eco-addon-grid">
+
+        <!-- Photo Pack -->
+        <div class="eco-addon-card">
+            <div class="eco-addon-icon">
+                <i class="fa fa-camera"></i>
+            </div>
+            <h4>Photo Pack</h4>
+            <p>High-quality photos of your adventure moments.</p>
+            <ul>
+                <li>✔ 15 Edited Photos</li>
+                <li>✔ Digital Download</li>
+                <li>✔ Same Day Delivery</li>
+            </ul>
+            <div class="eco-addon-footer">
+                <span class="eco-price">₹499</span>
+                <button>Add to Booking</button>
+            </div>
+        </div>
+
+        <!-- Video Pack -->
+        <div class="eco-addon-card">
+            <div class="eco-addon-icon">
+                <i class="fa fa-video"></i>
+            </div>
+            <h4>Video Pack</h4>
+            <p>Relive your adventure with cinematic videos.</p>
+            <ul>
+                <li>✔ 2–3 Minute Edited Video</li>
+                <li>✔ HD Quality</li>
+                <li>✔ Music Included</li>
+            </ul>
+            <div class="eco-addon-footer">
+                <span class="eco-price">₹899</span>
+                <button>Add to Booking</button>
+            </div>
+        </div>
+
+        <!-- Combo Pack -->
+        <div class="eco-addon-card eco-addon-highlight">
+            <div class="eco-addon-icon">
+                <i class="fa fa-photo-film"></i>
+            </div>
+            <h4>Photo + Video Combo</h4>
+            <p>Best value pack for complete memories.</p>
+            <ul>
+                <li>✔ 20 Photos</li>
+                <li>✔ 3 Minute Video</li>
+                <li>✔ Priority Editing</li>
+            </ul>
+            <div class="eco-addon-footer">
+                <span class="eco-price">₹1199</span>
+                <button>Add Combo</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+</div>
+
+<script>
+function ecoToggleSidebar() {
+    document.getElementById("ecoSidebar").classList.toggle("eco-show");
+}
+</script>
+
+</body>
+</html>
