@@ -1,0 +1,3268 @@
+
+/*** Spinner Start ***/
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+/*** Spinner End ***/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-xl-square {
+    width: 66px;
+    height: 66px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square,
+.btn-xl-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.btn-primary {
+    color: var(--bs-white);
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background: var(--bs-dark);
+}
+
+.btn.btn-light {
+    color: var(--bs-primary);
+    border: none;
+}
+
+.btn.btn-light:hover {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+.btn.btn-dark {
+    color: var(--bs-white);
+    border: none;
+}
+
+.btn.btn-dark:hover {
+    color: var(--bs-primary);
+    background: var(--bs-light);
+}
+
+/*** Navbar Start ***/
+.nav-bar {
+    background: var(--bs-white);
+}
+
+.sticky-top {
+    transition: 1s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+    margin-right: 25px;
+    padding: 35px 0;
+    letter-spacing: 1px;
+    color: var(--bs-dark);
+    font-size: 17px;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top .navbar-light .navbar-nav .nav-link {
+    padding: 20px 0;
+    color: var(--bs-dark);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar-light .navbar-brand img {
+    max-height: 60px;
+    transition: .5s;
+}
+
+.sticky-top .navbar-light .navbar-brand img {
+    
+}
+
+
+/* Wrapper */
+.eco-maintenance-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Box */
+.eco-maintenance-box {
+    background: #ffffff;
+    padding: 50px 45px;
+    border-radius: 18px;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+}
+
+/* Icon */
+.eco-maintenance-icon {
+    font-size: 52px;
+    color: #3CBEEE;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+.eco-maintenance-box h1 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.eco-maintenance-box h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+/* Text */
+.eco-maintenance-box p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.eco-maintenance-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.eco-btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.eco-btn.primary {
+    background: #3CBEEE;
+    color: #fff;
+}
+
+.eco-btn.primary:hover {
+    background: #000;
+}
+
+.eco-btn.outline {
+    border: 2px solid #3CBEEE;
+    color: #3CBEEE;
+}
+
+.eco-btn.outline:hover {
+    background: #3CBEEE;
+    color: #fff;
+}
+
+/* Footer Text */
+.eco-footer-text {
+    font-size: 13px;
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .eco-maintenance-box {
+        padding: 35px 25px;
+    }
+
+    .eco-maintenance-box h1 {
+        font-size: 26px;
+    }
+}
+
+
+/* Wrapper */
+.eco-404-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Box */
+.eco-404-box {
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Icon */
+.eco-404-icon {
+    font-size: 48px;
+    color: #3CBEEE;
+    margin-bottom: 15px;
+}
+
+/* Headings */
+.eco-404-box h1 {
+    font-size: 96px;
+    color: #000;
+    line-height: 1;
+}
+
+.eco-404-box h2 {
+    font-size: 26px;
+    margin: 10px 0 15px;
+    color: #222;
+}
+
+/* Text */
+.eco-404-box p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.eco-404-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #3CBEEE;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.eco-404-btn:hover {
+    background: #000;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .eco-404-box {
+        padding: 35px 25px;
+    }
+
+    .eco-404-box h1 {
+        font-size: 72px;
+    }
+
+    .eco-404-box h2 {
+        font-size: 22px;
+    }
+}
+
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    margin-top: 8px !important;
+    background: var(--bs-light);
+    transition: .5s;
+    opacity: 1;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 8px !important;
+    transition: .5s;
+    opacity: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar.navbar-expand-lg .navbar-toggler {
+        padding: 8px 15px;
+        border: 1px solid var(--bs-primary);
+        color: var(--bs-primary);
+    }
+
+    .sticky-top .navbar-light .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+}
+/*** Navbar End ***/
+
+/*** Carousel Hero Header Start ***/
+.header-carousel .header-carousel-item img {
+    object-fit: cover;
+}
+
+
+@media (min-width: 1200px) {
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+        height: 700px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+        height: 1200px;
+    }
+}
+
+.header-carousel .owl-nav .owl-prev {
+    display: none;
+}
+
+.header-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    right: 50%;
+    transform: translateY(-50%);
+    margin-right: -60px;
+    border-radius: 60px;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.header-carousel .owl-nav .owl-next:hover {
+    box-shadow: inset 0 0 100px 0 var(--bs-light);
+    color: var(--bs-primary);
+}
+
+.header-carousel .owl-nav .owl-next i {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: carousel-next-btn;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+
+@keyframes carousel-next-btn {
+    0%  {margin-top: 35%;}
+    50%  {margin-bottom: 70%;}
+    100% {margin-top: 35%;}
+}
+
+.header-carousel .header-carousel-item .carousel-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+}
+
+.carousel-caption .ticket-form {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+.header-carousel .header-carousel-item img {
+    animation-name: image-zoom;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 1s;
+}
+
+@keyframes image-zoom {
+    0%  {width: 100%; height: 100%;}
+
+    25% {width: 115%; height: 115%;}
+
+    50% {width: 130%; height: 130%;}
+
+    75% {width: 120%; height: 120%;}
+
+    100% {width: 100%; height: 100%;}
+}
+/*** Carousel Hero Header End ***/
+
+/*** Single Page Hero Header Start ***/
+.bg-breadcrumb {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/page-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    transition: 0.5s;
+}
+
+.bg-breadcrumb .breadcrumb {
+    position: relative;
+}
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item a {
+    color: var(--bs-white);
+}
+/*** Single Page Hero Header End ***/
+
+
+/*** Feature Start ***/
+.feature .feature-item {
+    position: relative;
+    border-radius: 10px;
+    background: var(--bs-light);
+}
+
+.feature-item .feature-content {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    bottom: 0; 
+    left: 0;
+    margin-top: 0;
+    margin-right: 0; 
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    z-index: 2;
+    align-content: center;
+}
+
+.feature-item .feature-content .feature-content-inner {
+    position: relative;
+    z-index: 5;
+}
+/*** Feature End ***/
+
+
+/*** Service Start ***/
+.service {
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/service-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.service .service-section {
+    position: relative;
+    z-index: 5;
+}
+
+.service .service-days {
+    border-radius: 10px;
+    background: var(--bs-white);
+}
+
+.service .service-item {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--bs-white);
+    z-index: 1;
+}
+
+.service .service-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background: var(--bs-primary);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.service .service-item:hover:after {
+    height: 100%;
+}
+
+.service .service-item i {
+    color: var(--bs-primary);
+    transition: 0.5s;
+}
+
+.service .service-item:hover i {
+    color: var(--bs-white);
+}
+
+.service .service-item .service-content {
+    position: relative;
+    z-index: 3;
+}
+
+.service .service-item .service-content p {
+    transition: 0.5s;
+}
+
+.service .service-item:hover .service-content p {
+    color: var(--bs-white);
+}
+
+.service .service-item .service-content a.h4 {
+    transition: 0.5s;
+}
+
+.service .service-item:hover .service-content a.h4:hover {
+    color: var(--bs-white);
+}
+/*** Service End ***/
+
+
+/*** Blog Start ***/
+.blog .blog-item {
+    border-radius: 10px;
+}
+
+.blog .blog-item .blog-img {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.5s;
+}
+
+.blog .blog-item .blog-img img {
+    transition: 0.5s;
+}
+
+.blog .blog-item:hover .blog-img img {
+    transform: scale(1.2);
+}
+
+.blog .blog-item .blog-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+.blog .blog-item .blog-img .blog-category {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+    color: var(--bs-white);
+    background: var(--bs-primary);
+    z-index: 5;
+}
+
+.blog .blog-item .blog-img .blog-date {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    color: var(--bs-white);
+    z-index: 5;
+}
+
+.blog .blog-item .blog-content {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: var(--bs-light);
+}
+/*** Blog End ***/
+
+/*** Team Start ***/
+.team .team-item {
+    position: relative;
+    background: var(--bs-primary);
+    border-radius: 10px;
+}
+
+.team .team-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: var(--bs-dark);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.team .team-item:hover:after {
+    height: 100%;
+}
+
+.team .team-item .team-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.team .team-item .team-content .team-icon {
+    background: var(--bs-light);
+    border-radius: 10px;
+    display: flex;
+    display: inline-flex;
+}
+
+.team .team-item .team-content h4,
+.team .team-item .team-content p {
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-content h4 {
+    color: var(--bs-primary);
+}
+
+.team .team-item .team-content p {
+    color: var(--bs-white);
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-content p {
+    color: var(--bs-body);
+}
+/*** Team End ***/
+
+
+/*** Footer Start ***/
+.footer {
+    background: var(--bs-dark);
+}
+
+.footer .footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-item a {
+    line-height: 35px;
+    color: var(--bs-body);
+    transition: 0.5s;
+}
+
+.footer .footer-item p {
+    line-height: 35px;
+}
+
+.footer .footer-item a:hover {
+    color: var(--bs-primary);
+}
+
+.footer .footer-item .footer-btn a,
+.footer .footer-item .footer-btn a i {
+    transition: 0.5s;
+}
+
+.footer .footer-item .footer-btn a:hover {
+    background: var(--bs-white);
+}
+
+.footer .footer-item .footer-btn a:hover i {
+    color: var(--bs-primary);
+}
+
+.footer .footer-item .opening-date {
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.footer .footer-item .opening-date .opening-clock {
+    display: flex;
+    align-items: center;
+    line-height: 35px;
+}
+/*** Footer End ***/
+
+/*** copyright Start ***/
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bs-dark);
+}
+/*** copyright end ***/
+
+
+.counter-item i {
+  font-size: 30px;
+}
+.counter-counting{
+  margin-bottom: 0px !important;
+}
+h1 {
+  font-size: 40px !important;
+}
+.service-content i {
+  font-size: 40px;
+}
+.about-modern {
+  background: #f9fbfd;
+}
+
+.about-image-box img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-box {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #3CBEEE;
+  color: #fff;
+  padding: 20px 25px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.experience-box h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.about-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.about-card i {
+  font-size: 32px;
+  color: #3CBEEE;
+  margin-bottom: 15px;
+}
+
+.about-card h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .experience-box {
+    position: static;
+    margin-top: 15px;
+  }
+}
+.about-features {
+  background: #f9fbfd;
+}
+
+.about-feature-box {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.about-feature-box:hover {
+  transform: translateY(-8px);
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  background: #3CBEEE;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 28px;
+}
+
+.about-feature-box h4 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.about-feature-box p {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .about-feature-box {
+    padding: 25px 20px;
+  }
+}
+.what-we-offer {
+  background: #f9fbfd;
+}
+
+.offer-box {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.offer-box:hover {
+  transform: translateY(-10px);
+}
+
+.offer-icon {
+  width: 75px;
+  height: 75px;
+  background: #3CBEEE;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 0 auto 20px;
+}
+
+.offer-box h4 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.offer-box p {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .offer-box {
+    padding: 25px 20px;
+  }
+}
+.team-modern {
+  background: #f9fbfd;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.team-img img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 30px 25px;
+}
+
+.team-info h4 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.team-info span {
+  display: block;
+  font-size: 14px;
+  color: #3CBEEE;
+  margin-bottom: 15px;
+}
+
+.team-info p {
+  color: #6c757d;
+  font-size: 15px;
+}
+
+.team-social {
+  margin-bottom: 15px;
+}
+
+.team-social a {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  background: #3CBEEE;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.team-social a:hover {
+  background: #000;
+}
+
+@media (max-width: 576px) {
+  .team-img img {
+    height: 240px;
+  }
+}
+.service-intro {
+  background: #f9fbfd;
+}
+
+.service-points {
+  list-style: none;
+  padding: 0;
+}
+
+.service-points li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.service-points i {
+  color: #3CBEEE;
+  margin-right: 8px;
+}
+
+.service-highlight-box {
+  background: #ffffff;
+  padding: 25px 22px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.service-highlight-box:hover {
+  transform: translateY(-6px);
+}
+
+.service-highlight-box i {
+  font-size: 30px;
+  color: #3CBEEE;
+  margin-bottom: 15px;
+}
+
+.service-highlight-box h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service-highlight-box p {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .service-highlight-box {
+    text-align: center;
+  }
+}
+.how-it-works {
+  background: #ffffff;
+}
+
+.work-step {
+  background: #f9fbfd;
+  padding: 35px 25px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.work-step:hover {
+  transform: translateY(-8px);
+}
+
+.step-number {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(60, 190, 238, 0.15);
+}
+
+.work-step i {
+  font-size: 36px;
+  color: #3CBEEE;
+  margin-bottom: 18px;
+}
+
+.work-step h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.work-step p {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .step-number {
+    font-size: 32px;
+  }
+}
+.image-services {
+  background: #f9fbfd;
+}
+
+.service-content h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service-content p {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.service-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.service-content ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.service-content ul i {
+  color: #3CBEEE;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .service-content {
+    text-align: center;
+  }
+
+  .service-content ul {
+    text-align: left;
+    display: inline-block;
+  }
+}
+.gallery-section {
+  background: #f9fbfd;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.gallery-overlay h5 {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .gallery-item img {
+    height: 220px;
+  }
+}
+.booking-section {
+  background: linear-gradient(120deg, #f5fbff, #ffffff);
+}
+
+.booking-section h2 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.booking-section h2 span {
+  color: #3CBEEE;
+}
+
+.booking-section p {
+  color: #555;
+  margin-top: 15px;
+}
+
+.badge {
+  background: #3CBEEE;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.booking-points li {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.booking-box {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.booking-box label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.time-slots span {
+  padding: 10px 18px;
+  border: 1px solid #3CBEEE;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.time-slots span:hover {
+  background: #3CBEEE;
+  color: #fff;
+}
+
+.book-btn {
+  width: 100%;
+  background: #3CBEEE;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 40px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #000;
+}
+
+/*dashboard*/
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body.dashboard-page {
+  margin: 0;
+  background: #f4f6f9;
+}
+
+/* Sidebar */
+.eco-sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.eco-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eco-close-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.eco-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eco-menu li {
+    margin-bottom: 5px;
+}
+
+.eco-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.eco-menu li a:hover {
+    background: rgba(60, 190, 238, 0.2);
+}
+
+.eco-menu li.eco-active a {
+    background: #3CBEEE;
+    color: #000;
+}
+
+.eco-menu i {
+    width: 20px;
+    text-align: center;
+}
+.eco-sidebar-header img {
+  width: 160px;
+  margin-bottom: 20px;
+}
+.eco-sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* logo center */
+    position: relative;
+    padding: 20px;
+}
+
+.eco-sidebar-header .navbar-brand {
+    display: flex;
+    justify-content: center;
+}
+
+.eco-sidebar-header img {
+    max-width: 140px; /* adjust if needed */
+    height: auto;
+}
+
+.eco-close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+/* =========================
+   TIME BOOKING PAGE
+========================= */
+
+.eco-booking-intro {
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+.eco-booking-intro h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.eco-booking-intro p {
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Booking Form */
+.eco-booking-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    margin-bottom: 40px;
+}
+
+.eco-booking-form form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.eco-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.eco-form-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.eco-form-group input,
+.eco-form-group select {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+.eco-form-group input:focus,
+.eco-form-group select:focus {
+    border-color: #3CBEEE;
+}
+
+/* Submit Button */
+.eco-btn-primary {
+    grid-column: span 3;
+    background: #3CBEEE;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eco-btn-primary:hover {
+    background: #2aa9d3;
+}
+
+/* Table Section */
+.eco-table-section h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.eco-table-wrap {
+    background: #fff;
+    border-radius: 14px;
+    overflow-x: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.eco-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.eco-table th,
+.eco-table td {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.eco-table th {
+    background: #f1f5f9;
+    font-weight: 600;
+}
+
+.eco-table tr:not(:last-child) td {
+    border-bottom: 1px solid #eee;
+}
+
+/* Status */
+.eco-success {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.eco-pending {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+    .eco-booking-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .eco-btn-primary {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .eco-booking-intro h2 {
+        font-size: 20px;
+    }
+}
+
+
+/* Main */
+.eco-main {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+/* Topbar */
+.eco-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+
+.eco-menu-btn {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+
+.eco-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Cards */
+.eco-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.eco-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.eco-card i {
+  font-size: 28px;
+  color: #3CBEEE;
+}
+
+.eco-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #3CBEEE;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Table */
+.eco-table-section {
+  margin-top: 30px;
+}
+
+.eco-table-wrap {
+  overflow-x: auto;
+}
+
+.eco-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  border-collapse: collapse;
+}
+
+.eco-table th,
+.eco-table td {
+  padding: 14px;
+  text-align: left;
+}
+.eco-table th {
+  color: #000;
+}
+
+.eco-table thead {
+  background: #3CBEEE;
+  color: #fff;
+}
+
+.eco-success {
+  color: green;
+  font-weight: bold;
+}
+
+.eco-pending {
+  color: orange;
+  font-weight: bold;
+}
+/* =========================
+   SAFETY WAIVER
+========================= */
+
+.eco-waiver {
+    padding: 30px 10px;
+}
+
+/* Intro */
+.eco-waiver-intro {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
+
+.eco-waiver-intro h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.eco-waiver-intro p {
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Waiver Box */
+.eco-waiver-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+}
+
+.eco-waiver-box h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Scroll Content */
+.eco-waiver-content {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.eco-waiver-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* Accept Checkbox */
+.eco-waiver-accept {
+    margin-bottom: 25px;
+}
+
+.eco-waiver-accept label {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.eco-waiver-accept input {
+    margin-right: 8px;
+}
+
+/* Buttons */
+.eco-waiver-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.eco-btn-primary {
+    background: #3CBEEE;
+    color: #fff;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.eco-btn-primary:hover {
+    background: #2aa9d3;
+}
+
+.eco-btn-secondary {
+    background: #f1f5f9;
+    color: #333;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .eco-waiver-intro h2 {
+        font-size: 20px;
+    }
+
+    .eco-waiver-box {
+        padding: 22px;
+    }
+}
+/* ================================
+   PHOTO / VIDEO ADDONS
+================================ */
+
+.eco-addon {
+    padding: 30px;
+}
+
+.eco-addon-header {
+    margin-bottom: 30px;
+}
+
+.eco-addon-header h2 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.eco-addon-header p {
+    color: #6b7280;
+}
+
+/* Grid */
+.eco-addon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.eco-addon-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eco-addon-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* Highlight */
+.eco-addon-highlight {
+    border: 2px solid #3CBEEE;
+}
+
+/* Icon */
+.eco-addon-icon {
+    width: 55px;
+    height: 55px;
+    background: #3CBEEE;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Content */
+.eco-addon-card h4 {
+    margin-bottom: 8px;
+}
+
+.eco-addon-card p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.eco-addon-card ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.eco-addon-card ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* Footer */
+.eco-addon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eco-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.eco-addon-footer button {
+    background: #3CBEEE;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.eco-addon-footer button:hover {
+    background: #2aa6d3;
+}
+/* ================================
+   PROFILE PAGE
+================================ */
+
+.eco-profile {
+    padding: 30px;
+}
+
+/* Header */
+.eco-profile-header {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.eco-profile-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.eco-profile-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.eco-profile-info h2 {
+    margin: 0;
+}
+
+.eco-profile-info p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Edit button */
+.eco-edit-btn {
+    background: #3CBEEE;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.eco-edit-btn i {
+    margin-right: 6px;
+}
+
+/* Grid */
+.eco-profile-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 25px;
+}
+
+/* Card */
+.eco-profile-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.eco-profile-card h4 {
+    margin-bottom: 20px;
+}
+
+/* Form */
+.eco-form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.eco-form-group {
+    flex: 1;
+}
+
+.eco-form-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+.eco-form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.eco-form-group input:focus {
+    outline: none;
+    border-color: #3CBEEE;
+}
+
+/* Buttons */
+.eco-save-btn {
+    margin-top: 15px;
+    background: #111827;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.eco-user img {
+  width: 50px;
+}
+/* ================================
+   LOGOUT PAGE
+================================ */
+
+.eco-logout {
+    min-height: calc(100vh - 70px); /* topbar height adjust */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Box */
+.eco-logout-box {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.eco-logout-box i {
+    font-size: 42px;
+    color: #3CBEEE;
+    margin-bottom: 15px;
+}
+
+.eco-logout-box h2 {
+    margin-bottom: 10px;
+}
+
+.eco-logout-box p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.eco-logout-actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.eco-btn {
+    padding: 10px 22px;
+    border-radius: 22px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Cancel */
+.eco-cancel-btn {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+/* Logout */
+.eco-logout-btn {
+    background: #111827;
+    color: #ffffff;
+}
+
+/* Hover */
+.eco-cancel-btn:hover {
+    background: #d1d5db;
+}
+
+.eco-logout-btn:hover {
+    background: #000000;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+
+    .eco-logout-actions {
+        flex-direction: column;
+    }
+
+    .eco-btn {
+        width: 100%;
+    }
+}
+/* ================================
+   LOGIN PAGE
+================================ */
+
+/* ================================
+   REGISTER PAGE
+================================ */
+
+
+.eco-register-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3CBEEE, #0f172a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper */
+.eco-register-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Box */
+.eco-register-box {
+    background: #ffffff;
+    max-width: 460px;
+    margin: auto;
+    padding: 40px 35px;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Logo */
+.eco-register-logo img {
+    max-width: 140px;
+    margin-bottom: 18px;
+}
+
+/* Title */
+.eco-register-box h2 {
+    margin-bottom: 6px;
+}
+
+.eco-register-sub {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* Form */
+.eco-register-form {
+    width: 100%;
+}
+
+.eco-form-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.eco-form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.eco-form-group input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border-radius: 30px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    outline: none;
+}
+
+.eco-form-group input:focus {
+    border-color: #3CBEEE;
+}
+
+/* Terms */
+.eco-terms {
+    text-align: left;
+    font-size: 13px;
+    margin: 15px 0 20px;
+}
+
+.eco-terms a {
+    color: #3CBEEE;
+    text-decoration: none;
+}
+
+/* Button */
+.eco-register-btn {
+    width: 100%;
+    background: #111827;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.eco-register-btn:hover {
+    background: #000000;
+}
+
+/* Login link */
+.eco-login-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.eco-login-text a {
+    color: #3CBEEE;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .eco-register-box {
+        padding: 30px 25px;
+    }
+}
+
+
+.eco-login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3CBEEE, #0f172a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper */
+.eco-login-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Box */
+.eco-login-box {
+    background: #ffffff;
+    max-width: 420px;
+    margin: auto;
+    padding: 40px 35px;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Logo */
+.eco-login-logo img {
+    max-width: 140px;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.eco-login-box h2 {
+    margin-bottom: 8px;
+}
+
+.eco-login-sub {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* Form */
+.eco-login-form {
+    width: 100%;
+}
+
+.eco-form-group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.eco-form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.eco-form-group input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border-radius: 30px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    outline: none;
+}
+
+.eco-form-group input:focus {
+    border-color: #3CBEEE;
+}
+
+/* Options */
+.eco-login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.eco-login-options a {
+    text-decoration: none;
+    color: #3CBEEE;
+}
+
+/* Button */
+.eco-login-btn {
+    width: 100%;
+    background: #111827;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.eco-login-btn:hover {
+    background: #000000;
+}
+
+/* Signup */
+.eco-signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.eco-signup-text a {
+    color: #3CBEEE;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+
+    .eco-login-box {
+        padding: 30px 25px;
+    }
+
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+
+    .eco-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .eco-form-row {
+        flex-direction: column;
+    }
+
+    .eco-profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .eco-sidebar {
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .eco-sidebar.eco-show {
+    transform: translateX(0);
+  }
+
+  .eco-main {
+    margin-left: 0;
+  }
+
+  .eco-menu-btn {
+    display: block;
+  }
+
+  .eco-close-btn {
+    display: block;
+  }
+}
+.footer-item p,.footer .footer-item a {
+  color: #ddd;
+}
+.footer .navbar-brand img {
+  width: 150px;
+}
+.navbar-light .navbar-brand img {
+  width: 150px;
+}
+
+/*dashboard*/
+/* RTL Toggle Button */
+.rtl-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: #102d47;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+#rtl-toggle {
+  margin: 0px 10px;
+}
+.rtl-btn:hover {
+  background-color: #0b2236;
+}
+
+/* RTL styles */
+body.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Example fixes */
+body.rtl nav ul {
+  flex-direction: row-reverse;
+}
+
+body.rtl .text-start {
+  text-align: right !important;
+}
+
+body.rtl .text-end {
+  text-align: left !important;
+}
+/* Theme toggle button */
+.theme-btn {
+  background: transparent;
+  border: 2px solid currentColor;
+  color: #102d47;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Light theme (default) */
+body {
+  background: #ffffff;
+  color: #102d47;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark theme */
+body.dark {
+  background: #0b1220;
+  color: #ffffff;
+}
+
+/* Button color in dark */
+body.dark .theme-btn {
+  color: #ffffff;
+}
+.rtl .owl-carousel {
+  direction: initial;
+}
+.dark .about h1,.dark .blog h1,.dark .team h1,.dark .badge h1,.dark .what-we-offer h2,.dark .team-modern h2,.dark .service-intro h2,.dark .how-it-works h2,.dark .image-services h2,.dark .gallery-section h2,.dark .service-content h3,.dark .booking-section h2,.dark .blog h4,.dark .contact .pb-5 h4
+{
+    color:#fff;
+}
+.rtl .about .me-3 {
+  margin-right: 0rem !important;
+  margin-left: 1rem !important;
+
+}
+.dark .service .service-days p,.dark .blog-content p,.dark .about-card p,.dark blockquote p,.dark .contact p,.dark .form-floating > .form-control::placeholder
+{
+    color:#000;
+}
+.dark .about-modern,.dark .what-we-offer,.dark .team-modern,.dark .service-intro,.dark .how-it-works,.dark .image-services,.dark .gallery-section,.dark .booking-section
+{
+    background: none;
+}
+.rtl .navbar .dropdown-toggle::after {
+  margin-right: 8px;
+}
+.dark .service-points li,.dark .time-slots span {
+  color: #777;
+}
+.rtl .service-points i {
+  margin-left: 8px;
+}
+.rtl .form-select
+{
+padding: 10px 38px 10px 0px;
+}
+.rtl .blog .blog-item .blog-img .blog-date
+{
+    right: 25px;
+}
+.rtl .blog .blog-item .blog-img .blog-date i
+{
+    margin-left: .5rem !important;
+}
+.rtl .list-group.list-group-flush {
+  padding: 0px;
+}
+.rtl .blog .input-group .btn {
+  display: none;
+}
+.rtl .blog .ps-3
+{
+    padding-right: 1rem !important;
+}
+.rtl .footer-item .me-3 {
+  margin-left: 1rem !important;
+}
+.rtl .text-start .d-flex.flex-shrink-0 {
+  float: right;
+}
+/*home2*/
+.eco2-hero-center {
+    position: relative;
+    overflow: hidden;
+}
+
+.eco2-center-slide {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.eco2-center-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.eco2-center-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.eco2-badge {
+    background: rgba(60,190,238,0.2);
+    color: #3CBEEE;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.eco2-center-content h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.eco2-center-content p {
+    color: #ddd;
+    max-width: 650px;
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+
+.eco2-main-btn {
+    background: #3CBEEE;
+    color: #000;
+    padding: 14px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.eco2-main-btn.outline {
+    background: transparent;
+    border: 2px solid #3CBEEE;
+    color: #3CBEEE;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .eco2-center-content h1 {
+        font-size: 38px;
+    }
+}
+.eco2-feature-section {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.eco2-feature-head h6 {
+    color: #3CBEEE;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.eco2-feature-head h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.eco2-feature-head p {
+    max-width: 650px;
+    margin: auto;
+    color: #666;
+}
+
+.eco2-feature-grid {
+    margin-top: 60px;
+}
+
+.eco2-feature-box {
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: 0.4s;
+    height: 100%;
+}
+
+.eco2-feature-box:hover {
+    transform: translateY(-15px);
+}
+
+.eco2-feature-img img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.eco2-feature-info {
+    padding: 30px;
+}
+
+.eco2-feature-info h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.eco2-feature-info p {
+    color: #666;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.eco2-feature-info a {
+    color: #3CBEEE;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.eco2-feature-box.active {
+    border: 2px solid #3CBEEE;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .eco2-feature-head h2{
+        font-size:32px;
+    }
+}
+.eco2x-about {
+    width: 100%;
+    padding: 0;
+    background: #0b0f14;
+}
+
+.eco2x-about-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+}
+
+/* IMAGE SIDE */
+.eco2x-about-image {
+    position: relative;
+}
+
+.eco2x-about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eco2x-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.85));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+    color: #fff;
+}
+
+.eco2x-overlay h2 {
+    font-size: 64px;
+    font-weight: 900;
+    margin: 0;
+    color: #fff;
+}
+
+.eco2x-overlay p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* CONTENT */
+.eco2x-about-content {
+    padding: 80px 70px;
+    background: #0b0f14;
+    color: #fff;
+}
+
+.eco2x-tag {
+    color: #3cbeee;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.eco2x-about-content h1 {
+    font-size: 44px;
+    font-weight: 800;
+    margin: 15px 0 20px;
+    color: #fff;
+}
+
+.eco2x-text {
+    color: #bfc6d1;
+    max-width: 520px;
+}
+
+/* CARDS */
+.eco2x-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.eco2x-card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.eco2x-card:hover {
+    transform: translateY(-8px);
+    background: rgba(60,190,238,0.15);
+}
+
+.eco2x-card i {
+    font-size: 28px;
+    color: #3cbeee;
+    margin-bottom: 12px;
+}
+
+.eco2x-card h4 {
+    margin: 0 0 8px;
+    color: #fff;
+}
+
+/* STATS */
+.eco2x-stats {
+    display: flex;
+    gap: 50px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 30px;
+}
+
+.eco2x-stats h3 {
+    margin: 0;
+    font-size: 30px;
+    color: #3cbeee;
+}
+
+.eco2x-stats span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px){
+    .eco2x-about-row {
+        grid-template-columns: 1fr;
+    }
+    .eco2x-cards {
+        grid-template-columns: 1fr;
+    }
+    .eco2x-about-content {
+        padding: 50px 30px;
+    }
+}
+.eco2x-services-head h2 {
+    color: #fff;
+}
+
+.eco2x-services-head p {
+    color: #bfc6d1;
+}
+
+.eco2x-service-card h4 {
+  color: #fff;
+}
+.eco2x-services {
+    background: #f8fbff;   /* light background */
+    padding: 100px 0;
+    color: #111;
+}
+
+.eco2x-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.eco2x-services-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.eco2x-services-head span {
+    color: #3cbeee;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.eco2x-services-head h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 15px 0;
+    color: #111;
+}
+
+.eco2x-services-head p {
+    color: #555;
+}
+
+/* LAYOUT */
+.eco2x-services-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* TIMING BOX */
+.eco2x-timing-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border-left: 5px solid #3cbeee;
+}
+
+.eco2x-timing-box h3 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #111;
+}
+
+.eco2x-time-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.eco2x-time-item span {
+    color: #777;
+    font-size: 14px;
+}
+
+.eco2x-time-item strong {
+    font-size: 18px;
+    color: #222;
+}
+
+.eco2x-time-item.highlight strong {
+    color: #3cbeee;
+}
+
+/* SERVICE CARDS */
+.eco2x-service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.eco2x-service-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+}
+
+.eco2x-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(60,190,238,0.25);
+}
+
+.eco2x-service-card i {
+    font-size: 34px;
+    color: #3cbeee;
+    margin-bottom: 15px;
+}
+
+.eco2x-service-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.eco2x-service-card p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .eco2x-services-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .eco2x-service-cards {
+        grid-template-columns: 1fr;
+    }
+}
+.eco2-blog {
+    padding: 100px 0;
+    background: #f9fcff;
+}
+
+.eco2-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.eco2-blog-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.eco2-blog-head span {
+    color: #3cbeee;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.eco2-blog-head h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.eco2-blog-head p {
+    color: #555;
+}
+
+/* Grid */
+.eco2-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* Card */
+.eco2-blog-card {
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+}
+
+.eco2-blog-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(60,190,238,0.25);
+}
+
+/* Image */
+.eco2-blog-img {
+    position: relative;
+    height: 230px;
+}
+
+.eco2-blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eco2-blog-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #3cbeee;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Content */
+.eco2-blog-body {
+    padding: 30px;
+}
+
+.eco2-blog-date {
+    font-size: 13px;
+    color: #777;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.eco2-blog-body h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.eco2-blog-body p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.eco2-blog-body a {
+    color: #3cbeee;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.eco2-blog-body a i {
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.eco2-blog-body a:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .eco2-blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.eco2-testimonial {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.eco2-testimonial-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.eco2-testimonial-head span {
+    color: #3cbeee;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.eco2-testimonial-head h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.eco2-testimonial-head p {
+    color: #555;
+}
+
+/* Grid */
+.eco2-testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* Card */
+.eco2-testimonial-card {
+    background: #f9fcff;
+    border-radius: 25px;
+    padding: 40px 35px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.eco2-testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(60,190,238,0.25);
+}
+
+/* Quote Icon */
+.eco2-testimonial-icon {
+    width: 55px;
+    height: 55px;
+    background: #3cbeee;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Text */
+.eco2-testimonial-card p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* User */
+.eco2-testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.eco2-testimonial-user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.eco2-testimonial-user h5 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.eco2-testimonial-user span {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .eco2-testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.eco2-team {
+    padding: 100px 0;
+    background: #f7fbff;
+}
+
+.eco2-team-head {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 70px;
+}
+
+.eco2-team-head span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #3cbeee;
+    font-weight: 700;
+}
+
+.eco2-team-head h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.eco2-team-head p {
+    color: #555;
+}
+
+/* Grid */
+.eco2-team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* Card */
+.eco2-team-card {
+    background: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+}
+
+.eco2-team-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 55px rgba(60,190,238,0.3);
+}
+
+/* Image */
+.eco2-team-img img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Info */
+.eco2-team-info {
+    padding: 30px;
+    text-align: center;
+}
+
+.eco2-team-info h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.eco2-team-info span {
+    font-size: 14px;
+    color: #3cbeee;
+    font-weight: 600;
+}
+
+.eco2-team-info p {
+    margin: 18px 0 25px;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Social */
+.eco2-team-social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.eco2-team-social a {
+    width: 38px;
+    height: 38px;
+    background: #eef7fc;
+    color: #3cbeee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.eco2-team-card:hover .eco2-team-social a {
+    background: #3cbeee;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .eco2-team-grid {
+        grid-template-columns: 1fr;
+    }
+    #rtl-toggle,#theme-toggle
+    {
+    display:none;
+    }
+}
+.dark .eco2-feature-section,.dark .eco2x-services,.dark .eco2-blog,.dark .eco2-testimonial,.dark .eco2-team
+{
+    background:none;
+}
+.dark .eco2-feature-head h2,.dark .eco2x-services-head h2,.dark .eco2-blog-head h2,.dark .eco2-testimonial-head h2,.dark .eco2-team-head h2
+{
+    color: #fff;
+}
+
+/*home2*/
