@@ -3255,6 +3255,9 @@ padding: 10px 38px 10px 0px;
     {
     display:none;
     }
+    html, body {
+    overflow-x: hidden;
+}
 }
 .dark .eco2-feature-section,.dark .eco2x-services,.dark .eco2-blog,.dark .eco2-testimonial,.dark .eco2-team,.dark .eco2-feature-box
 {
@@ -3284,8 +3287,13 @@ padding: 10px 38px 10px 0px;
 {
     color:#fff;
 }
+.dark .booking-box label
+{
+color:#000;
+}
 
 /*home2*/
+
 
 
 
