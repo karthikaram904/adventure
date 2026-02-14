@@ -3256,13 +3256,23 @@ padding: 10px 38px 10px 0px;
     display:none;
     }
 }
-.dark .eco2-feature-section,.dark .eco2x-services,.dark .eco2-blog,.dark .eco2-testimonial,.dark .eco2-team
+.dark .eco2-feature-section,.dark .eco2x-services,.dark .eco2-blog,.dark .eco2-testimonial,.dark .eco2-team,.dark .eco2-feature-box
 {
     background:none;
 }
-.dark .eco2-feature-head h2,.dark .eco2x-services-head h2,.dark .eco2-blog-head h2,.dark .eco2-testimonial-head h2,.dark .eco2-team-head h2
+.dark .eco2-feature-head h2,.dark .eco2x-services-head h2,.dark .eco2-blog-head h2,.dark .eco2-testimonial-head h2,.dark .eco2-team-head h2,.dark .eco2-feature-info h4,.dark .eco2x-timing-box p,.dark .eco2x-timing-box span,.dark .eco2x-timing-box strong
 {
     color: #fff;
 }
+.dark eco2x-timing-box,.dark .eco2x-service-card
+{
+    background:#000;
+}
+.dark .eco2x-service-card
+{
+    color:#fff;
+}
+    
+
 
 /*home2*/
