@@ -3268,12 +3268,22 @@ padding: 10px 38px 10px 0px;
 {
     background:#000;
 }
-.dark .eco2x-service-card,.dark .eco2-blog-body h4,.dark .eco2-team-info h4
+.dark .eco2x-service-card,.dark .eco2-blog-body h4,.dark .eco2-team-info h4,.dark .navbar-light .navbar-nav .nav-link,.dark .service .service-days h4,.dark .service .service-days p,.dark .service .service-item .service-content a.h4
+{
+    color:#fff !important;
+}
+.dark .navbar-light .navbar-nav .nav-link.active {
+  color: var(--bs-primary) !important;
+}
+.dark .nav-bar,dark .service .service-days,.dark .service-item.p-4,.dark .blog-content.p-4 {
+ background: #000 !important;
+} 
+
+.dark .blog .blog-item .blog-content a,.dark .blog .blog-item .blog-content p
 {
     color:#fff;
 }
-    
-
 
 /*home2*/
+
 
