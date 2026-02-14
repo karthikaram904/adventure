@@ -3264,11 +3264,11 @@ padding: 10px 38px 10px 0px;
 {
     color: #fff;
 }
-.dark eco2x-timing-box,.dark .eco2x-service-card
+.dark eco2x-timing-box,.dark .eco2x-service-card,.dark .eco2-blog-card,.dark .eco2-testimonial-card,.dark .eco2-team-card
 {
     background:#000;
 }
-.dark .eco2x-service-card
+.dark .eco2x-service-card,.dark .eco2-blog-body h4,.dark .eco2-team-info h4
 {
     color:#fff;
 }
@@ -3276,3 +3276,4 @@ padding: 10px 38px 10px 0px;
 
 
 /*home2*/
+
