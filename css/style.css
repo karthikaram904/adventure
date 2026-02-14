@@ -3275,15 +3275,17 @@ padding: 10px 38px 10px 0px;
 .dark .navbar-light .navbar-nav .nav-link.active {
   color: var(--bs-primary) !important;
 }
-.dark .nav-bar,dark .service .service-days,.dark .service-item.p-4,.dark .blog-content.p-4 {
+.dark .nav-bar,dark .service .service-days,.dark .service-item.p-4,.dark .blog-content.p-4,.dark .team-info.text-center,.dark .offer-box.h-100,.dark .about-card 
+{
  background: #000 !important;
 } 
 
-.dark .blog .blog-item .blog-content a,.dark .blog .blog-item .blog-content p
+.dark .blog .blog-item .blog-content a,.dark .blog .blog-item .blog-content p,.dark .about-modern.py-5 h1,.dark .team-info h4,.dark .offer-box h4,.dark .about-card h5,.dark .about-card p
 {
     color:#fff;
 }
 
 /*home2*/
+
 
 
