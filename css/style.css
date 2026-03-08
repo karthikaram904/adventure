@@ -3378,3 +3378,30 @@ body.dark {
 .btn-social:hover{
     opacity:0.9;
 }
+
+@media (max-width:1024px){
+
+.nav-bar{
+    position:relative;
+}
+
+.navbar-collapse{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:20px;
+    z-index:9999;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-nav{
+    text-align:center;
+}
+
+.navbar-nav .nav-link{
+    padding:10px 0;
+}
+
+}
